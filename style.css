@@ -3,7 +3,6 @@
 }
 
 html {
-    margin: auto;
     overflow: scroll;
     display: block;
 }
@@ -38,4 +37,11 @@ div {
 
 label {
     font-size: 20px;
+}
+
+button {
+    font-size: 20px;
+    /* Ubah ukuran font */
+    padding: 10px 20px;
+    /* Ubah padding tombol */
 }
