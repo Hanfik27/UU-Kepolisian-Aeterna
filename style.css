@@ -1,0 +1,34 @@
+* {
+    margin: auto;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    font-size: 12px;
+}
+
+table {
+    border-collapse: collapse;
+    /* Menggabungkan batas sel */
+    border: 2px solid black;
+    /* Ketebalan dan warna batas tabel */
+}
+
+td,
+th {
+    border: 1px solid black;
+    /* Ketebalan dan warna batas sel */
+    padding: 8px;
+    /* Ruang dalam sel */
+}
+
+div {
+    font-size: large;
+}
+
+label {
+    font-size: 20px;
+}
