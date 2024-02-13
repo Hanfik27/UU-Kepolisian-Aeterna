@@ -3,9 +3,10 @@
 }
 
 html {
+    margin: auto;
     overflow: scroll;
+    display: block;
 }
-
 body {
     font-size: 12px;
 }
