@@ -3,11 +3,21 @@
 }
 
 html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     overflow: hidden;
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     font-size: 12px;
+}
+
+h2 {
+    margin: auto;
 }
 
 table {
@@ -15,6 +25,7 @@ table {
     /* Menggabungkan batas sel */
     border: 2px solid black;
     /* Ketebalan dan warna batas tabel */
+    width: 100%;
 }
 
 td,
@@ -31,4 +42,23 @@ div {
 
 label {
     font-size: 20px;
+}
+
+.container {
+    height: 80%;
+    /* Ubah tinggi container sesuai kebutuhan Anda */
+    overflow-y: scroll;
+    /* Tambahkan overflow-y: scroll */
+    padding-right: 15px;
+    /* Menambahkan padding kanan agar tidak tumpang tindih dengan scrollbar */
+}
+
+
+/* Penyesuaian agar tabel tidak melebar secara horizontal */
+
+table td {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
