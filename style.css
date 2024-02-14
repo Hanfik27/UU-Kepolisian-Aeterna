@@ -94,3 +94,7 @@ input[type="text"] {
     border: 1px solid #ccc;
     margin-top: 20px;
 }
+
+#form-group {
+    margin-right: 10px;
+}

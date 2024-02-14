@@ -37,7 +37,7 @@ function submitForm() {
         historyNames.push(nama);
     }
 
-
+    // Menampilkan nama di history
     document.getElementById("history").innerText = "History Nama: " + historyNames.join(", ");
     document.getElementById("nama").value = "";
 
