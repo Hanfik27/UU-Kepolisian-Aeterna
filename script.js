@@ -1,5 +1,5 @@
 function submitForm() {
-    var nama = document.getElementById('nama').value;
+    var nama = document.getElementById("nama").value;
     var dendaTotal = 0;
     var penjaraTotal = 0;
     var history = document.getElementById('history');
@@ -25,14 +25,24 @@ function submitForm() {
     });
 
     // Menambahkan denda total dan penjara total ke dalam string riwayat
-    historyEntry += ' ' + dendaTotal + ' ' + penjaraTotal;
+    historyEntry += ' ' + nama + ' ' + dendaTotal + ' ' + penjaraTotal;
 
     // Menambahkan entri ke dalam riwayat di bawah yang sebelumnya
     var newEntry = document.createElement('div');
     newEntry.textContent = historyEntry;
     history.prepend(newEntry);
 
-    // Memperbarui nilai input denda dan penjara
+    // Menambahkan nama ke historyNames jika belum ada
+    if (!historyNames.includes(nama)) {
+        historyNames.push(nama);
+    }
+
+
+    document.getElementById("history").innerText = "History Nama: " + historyNames.join(", ");
+    document.getElementById("nama").value = "";
+
+    // Memperbarui nilai input nama, denda dan penjara
+    document.getElementById("nama").value = "";
     document.getElementById('denda').value = dendaTotal;
     document.getElementById('penjara').value = penjaraTotal;
 

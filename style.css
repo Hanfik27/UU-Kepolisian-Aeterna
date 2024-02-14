@@ -8,27 +8,46 @@ html {
 }
 
 body {
-    font-size: 12px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    margin: auto;
+    margin-top: 0;
     font-size: 24px;
 }
 
 table {
-    border-collapse: collapse;
-    /* Menggabungkan batas sel */
-    border: 2px solid black;
-    /* Ketebalan dan warna batas tabel */
+    margin: auto;
+    text-align: left;
 }
 
-td,
-th {
-    border: 1px solid black;
-    /* Ketebalan dan warna batas sel */
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
     padding: 8px;
-    /* Ruang dalam sel */
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
 }
 
 div {
@@ -40,8 +59,38 @@ label {
 }
 
 button {
-    font-size: 20px;
-    /* Ubah ukuran font */
     padding: 10px 20px;
-    /* Ubah padding tombol */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: center;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#history {
+    text-align: left;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
 }
