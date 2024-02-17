@@ -27,6 +27,90 @@ body {
 h2 {
     margin-top: 0;
     font-size: 24px;
+    padding: 20px;
+}
+
+.ringan {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.ringan2 {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: #16FF00;
+}
+
+.sedang {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.sedang2 {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: yellow;
+}
+
+.berat {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.berat2 {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: red;
+}
+
+.siaga {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.siaga2 {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+}
+
+.judul {
+    padding: 20px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: pink;
 }
 
 table {
@@ -43,7 +127,7 @@ td {
 th,
 td {
     padding: 8px;
-    text-align: left;
+    text-align: center;
 }
 
 th {
@@ -66,6 +150,8 @@ button {
     cursor: pointer;
     border-radius: 5px;
     margin: center;
+    width: 50%;
+    font-size: 24px;
 }
 
 button:hover {
@@ -75,19 +161,19 @@ button:hover {
 input[type="checkbox"] {
     transform: scale(1.5);
     margin-right: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 input[type="text"] {
     padding: 5px;
-    margin-bottom: 10px;
-    width: 50%;
+    margin: auto;
+    width: auto;
     box-sizing: border-box;
     text-align: center;
 }
 
 #history {
-    text-align: left;
+    text-align: center;
     margin: auto;
     width: 50%;
     padding: 10px;
@@ -96,5 +182,5 @@ input[type="text"] {
 }
 
 #form-group {
-    margin-right: 10px;
+    margin-right: 0px;
 }
