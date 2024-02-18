@@ -147,11 +147,12 @@ button {
     background-color: #4CAF50;
     color: white;
     border: none;
+    width: 20%;
+    height: 5%;
     cursor: pointer;
     border-radius: 5px;
     margin: center;
-    width: 50%;
-    font-size: 24px;
+    font-size: large;
 }
 
 button:hover {
@@ -166,8 +167,9 @@ input[type="checkbox"] {
 
 input[type="text"] {
     padding: 5px;
-    margin: auto;
     width: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
     box-sizing: border-box;
     text-align: center;
 }
