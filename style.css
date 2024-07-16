@@ -168,7 +168,7 @@ button {
     margin: center;
     margin-top: 5px;
     margin-bottom: 10px;
-    margin-left: 500px;
+    margin-left: 40%;
     font-size: large;
 }
 
@@ -202,7 +202,7 @@ input[type="text"] {
 }
 
 .form-group {
-    margin-left: 500px;
+    margin-left: 40%;
 }
 
 #form-group {
@@ -221,20 +221,67 @@ footer {
     color: #777;
 }
 
-/* Responsive design */
-@media (max-width: 600px) {
-    table, th, td {
-        display: block;
-        width: 100%;
-    }
-    
-    table th, table td {
-        text-align: right;
+@media (max-width: 480px) {
+    body {
         padding: 10px;
     }
-    
+
+    .container {
+        padding: 10px;
+    }
+
+    .judul {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1cm;
+    }
+
+    .ringan, .ringan2, .sedang, .sedang2, .berat, .berat2, .siaga, .siaga2, #history {
+        width: 90%;
+        padding: 10px;
+    }
+
+    table, th, td {
+        width: 100%;
+    }
+
+    table th, table td {
+        text-align: left;
+        padding: 10px;
+    }
+
     table td {
         border: none;
         border-bottom: 1px solid #ddd;
+    }
+
+    input[type="checkbox"] {
+        transform: scale(2);
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    button {
+        width: 100%;
+        margin-left: 0;
+        font-size: medium;
+    }
+
+    .form-group {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .credits {
+        font-size: 12px;
     }
 }
