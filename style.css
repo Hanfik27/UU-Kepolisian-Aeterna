@@ -1,14 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 html {
     overflow: scroll;
     display: block;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f1f1f1;
-    text-align: center;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
 }
 
 .container {
@@ -21,13 +27,10 @@ body {
 }
 
 .judul {
-    padding: 20px;
-    margin: auto;
-    width: 50%;
-    border: 1px solid #ccc;
-    margin-top: 20px;
-    background-color: pink;
-    font-size: 32ft;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
 }
 
 .gambar {
@@ -36,9 +39,10 @@ body {
 }
 
 h2 {
-    margin-top: 0;
-    font-size: 24px;
-    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 2em;
+    color: #333;
 }
 
 .ringan {
@@ -115,24 +119,33 @@ h2 {
 }
 
 table {
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+table th, table td {
+    padding: 12px;
     text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
-table,th,td {
-    border: 1px solid #000000;
+table th {
+    background-color: #f4f4f9;
 }
 
-th,td {
-    padding: 8px;
-    text-align: center;
-    
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
-th {
-    background-color: #000000;
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.CEKLIS {
+    transform: scale(1.2);
 }
 
 div {
@@ -155,6 +168,7 @@ button {
     margin: center;
     margin-top: 5px;
     margin-bottom: 10px;
+    margin-left: 500px;
     font-size: large;
 }
 
@@ -163,7 +177,7 @@ button:hover {
 }
 
 input[type="checkbox"] {
-    transform: scale(1.5);
+    transform: scale(2);
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -187,6 +201,10 @@ input[type="text"] {
     margin-top: 20px;
 }
 
+.form-group {
+    margin-left: 500px;
+}
+
 #form-group {
     margin-right: 0px;
 }
@@ -201,4 +219,22 @@ footer {
 .credits {
     font-size: 14px;
     color: #777;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+    
+    table th, table td {
+        text-align: right;
+        padding: 10px;
+    }
+    
+    table td {
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
 }

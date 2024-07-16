@@ -504,7 +504,12 @@
 
     <button onclick="submitForm()">Submit</button>
 
-    <div id="history"></div>
+    <body onload="loadHistory()">
+        <!-- Form and other elements -->
+        <div id="history"></div>
+    </body>
+    
+    <button type="button" onclick="resetHistory()">Reset History</button>
 
     <footer>
         <div class="credits">

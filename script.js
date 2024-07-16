@@ -27,6 +27,11 @@ function submitForm() {
     // Menambahkan denda total dan penjara total ke dalam string riwayat
     historyEntry += ' ' + nama + ' ' + dendaTotal + ' ' + penjaraTotal;
 
+    // Menyimpan entri ke dalam Local Storage
+    var currentHistory = JSON.parse(localStorage.getItem('history')) || [];
+    currentHistory.unshift(historyEntry);
+    localStorage.setItem('history', JSON.stringify(currentHistory));
+
     // Menambahkan entri ke dalam riwayat di bawah yang sebelumnya
     var newEntry = document.createElement('div');
     newEntry.textContent = historyEntry;
@@ -38,7 +43,7 @@ function submitForm() {
     }
 
     // Menampilkan nama di history
-    document.getElementById("history").innerText = "History Nama: " + historyNames.join(", ");
+
     document.getElementById("nama").value = "";
 
     // Memperbarui nilai input nama, denda dan penjara
@@ -50,4 +55,31 @@ function submitForm() {
     checkboxes.forEach(function(checkbox) {
         checkbox.checked = false;
     });
+}
+
+// Fungsi untuk memuat history dari Local Storage saat halaman dimuat
+function loadHistory() {
+    var history = document.getElementById('history');
+    var storedHistory = JSON.parse(localStorage.getItem('history')) || [];
+
+    storedHistory.forEach(function(entry) {
+        var newEntry = document.createElement('div');
+        newEntry.textContent = entry;
+        history.appendChild(newEntry);
+    });
+}
+
+// Panggil fungsi loadHistory saat halaman dimuat
+window.onload = loadHistory;
+
+function resetHistory() {
+    // Menghapus history dari Local Storage
+    localStorage.removeItem('history');
+
+    // Mengosongkan elemen history pada halaman
+    var history = document.getElementById('history');
+    history.innerHTML = '';
+
+    // Mengosongkan array historyNames
+    historyNames = [];
 }
