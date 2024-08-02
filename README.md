@@ -1,3 +1,2 @@
-# This is the GTA SA-MP Aeterna police law
-
-This code is still in progress...
+### Calculator for GTA SA-MP 
+#### Server KAN Roleplay & Police RP
